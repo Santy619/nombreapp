@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Perfil</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card *ngIf="user">
+    <ion-card-header>
+      <ion-card-title>{{ user.firstname }} {{ user.lastname }}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <div class="profile">
+        <img [src]="avatarUrl" alt="Perfil de {{ user.username }}">
+        <h2>{{ user.username }}</h2>
+        <p>{{ user.email }}</p>
+      </div>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card *ngIf="!user">
+    <ion-card-content>
+      El perfil no se encontró.
+    </ion-card-content>
+  </ion-card>
+</ion-content>

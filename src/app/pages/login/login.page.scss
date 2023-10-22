@@ -1,0 +1,62 @@
+/* login.page.scss */
+
+ion-content {
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  ion-button {
+    margin-top: 20px;
+    background-color: #583e75; // Color de fondo del botón
+    color: white; // Color del texto del botón
+  }
+
+.image-container{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+}
+
+.center-container {
+  // ... Tus estilos actuales ...
+  
+  a {
+    display: block;
+    margin-top: 15px; // Ajusta el valor según sea necesario
+    text-align: center;
+    color: #007bff; // O el color que desees
+    text-decoration: underline;
+  }
+}
+ion-content {
+  background-color: #000;
+  color: #fff; /* Texto blanco */
+  text-align: center; /* Texto centrado */
+  padding: 20px; /* Espacio interior */
+}
+
+/* Estilos para los títulos y subtítulos */
+ion-title {
+  font-size: 24px; /* Tamaño de fuente grande */
+  color: #007BFF; /* Texto azul */
+  margin-bottom: 10px; /* Margen inferior */
+}
+
+/* Estilos para los párrafos */
+p {
+  font-size: 16px; /* Tamaño de fuente mediano */
+}
+
+/* Estilos para los botones */
+ion-button {
+  background-color: #007BFF; /* Fondo azul para el botón */
+  color: #fff; /* Texto blanco */
+  font-weight: bold; /* Texto en negrita */
+  margin-top: 20px; /* Margen superior */
+}

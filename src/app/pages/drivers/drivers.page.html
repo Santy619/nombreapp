@@ -1,0 +1,60 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button auto-hide="false"></ion-menu-button>
+    </ion-buttons>
+
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+
+    <ion-title>Conductores</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!-- Contenido de la página de conductores -->
+  
+  <div class="driver-page-container">
+    <!-- Logo de Duoc UC -->
+    <ion-img src="../assets/img/duocuctrans.png" alt="Logo de Duoc UC" class="duoc-logo"></ion-img>
+    <h2>Ofrece tus servicios como conductor</h2>
+    <p>Gana dinero extra compartiendo tus viajes con otros estudiantes de Duoc UC.</p>
+
+    <form (ngSubmit)="registrarComoConductor()">
+      <ion-item>
+        <ion-label position="floating">Nombre</ion-label>
+        <ion-input [(ngModel)]="nombre" name="nombre" type="text"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Vehiculo</ion-label>
+        <ion-input [(ngModel)]="vehiculo" name="vehiculo" type="text"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Edad</ion-label>
+        <ion-input [(ngModel)]="edad" name="edad" type="number"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Patente</ion-label>
+        <ion-input [(ngModel)]="patente" name="patente" type="text"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Licencia (Foto)</ion-label>
+        <ion-input
+          [(ngModel)]="fotoLicencia"
+          name="fotoLicencia"
+          type="file"
+          accept="image/*"
+          (change)="onFileChange($event)"
+        ></ion-input>
+      </ion-item>
+      
+      <!-- Vista previa de la imagen -->
+      <img [src]="fotoLicencia ? fotoLicenciaPreview : ''" alt="Vista previa de la licencia" *ngIf="fotoLicencia">
+      
+      <ion-button expand="full" type="submit" class="register-button">
+        Registrarse como Conductor
+      </ion-button>
+    </form>
+  </div>
+</ion-content>

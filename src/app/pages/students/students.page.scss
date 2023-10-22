@@ -1,0 +1,119 @@
+ion-header {
+    background-color: #333;
+    color: white;
+  }
+  
+  ion-content {
+    ion-grid {
+      ion-row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+  
+        ion-col {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+  
+          p {
+            font-size: 16px;
+            margin-top: 5px;
+            color: #666;
+          }
+        }
+      }
+    }
+  
+    ion-img {
+      margin-top: 20px;
+      width: 100px;
+      height: 100px;
+      margin-bottom: 5px;
+    }
+  
+    .option-button {
+      margin-top: 10px;
+    }
+  }
+  
+  .welcome-container {
+    text-align: center;
+    padding: 20px;
+  
+    .welcome-title {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #333; // Cambia el color según tu diseño
+    }
+  
+    .welcome-message {
+      font-size: 18px;
+      color: #666; // Cambia el color según tu diseño
+    }
+  }
+  
+  .additional-content {
+    margin-top: 30px;
+  
+    .section-title {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #333;
+    }
+  
+    ion-item {
+      font-size: 18px;
+      color: #666;
+      cursor: pointer;
+    }
+  }
+  ion-title {
+    font-size: 24px;
+  }
+  
+  p {
+    font-size: 18px;
+    color: #333;
+    margin-top: 20px;
+  }
+/* Fondo negro para la página */
+ion-content {
+  background-color: #000;
+  color: #fff; /* Texto blanco */
+  text-align: center; /* Texto centrado */
+  padding: 20px; /* Espacio interior */
+}
+
+/* Estilos para el título principal */
+ion-title {
+  font-size: 24px; /* Tamaño de fuente grande */
+  color: #007BFF; /* Texto azul */
+  margin-bottom: 20px; /* Margen inferior */
+}
+
+/* Estilos para los íconos y etiquetas */
+.icon-row {
+  ion-col {
+    ion-img {
+      width: 100px; /* Ancho de las imágenes de íconos */
+      height: 100px; /* Altura de las imágenes de íconos */
+      margin: 0 auto; /* Centrar horizontalmente */
+      cursor: pointer; /* Cambio de cursor a puntero al pasar el mouse */
+    }
+
+    p {
+      font-size: 16px; /* Tamaño de fuente mediano */
+      margin-top: 10px; /* Margen superior */
+    }
+  }
+}
+
+/* Estilos para los botones */
+ion-button {
+  background-color: #007BFF; /* Fondo azul para el botón */
+  color: #fff; /* Texto blanco */
+  font-weight: bold; /* Texto en negrita */
+  margin-top: 20px; /* Margen superior */
+}

@@ -1,0 +1,35 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<!-- login.component.html -->
+<ion-content [fullscreen]="true">
+  <div class="image-container">
+    <img src="../assets/img/duoc.png" alt="Logo Duoc uc">
+    </div>
+
+  <div class="center-container">
+    <form (ngSubmit)="onSubmit()">
+      <ion-item>
+        <ion-label position="floating">Usuario</ion-label>
+        <ion-input type="text" [(ngModel)]="username" name="username" required></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Contraseña</ion-label>
+        <ion-input type="password" [(ngModel)]="password" name="password" required></ion-input>
+      </ion-item>
+
+      <ion-button expand="full" type="submit">Iniciar Sesión</ion-button>
+    </form>
+
+     <!-- Enlace para reestablecer contraseña -->
+     <a routerLink="/forget">¿Olvidaste tu contraseña?</a>
+    
+     <!-- Enlace para registrarse -->
+     <!-- <a routerLink="/register">Registrarse</a> -->
+    
+  </div>
+</ion-content>

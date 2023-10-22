@@ -1,0 +1,90 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/drivers"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Perfil Conductor</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <!-- Contenido de la página de perfil del conductor -->
+  <div class="driver-profile-container">
+    <!-- Sección de Nombre -->
+    <ion-card>
+      <ion-card-header>
+        Nombre
+      </ion-card-header>
+      <ion-card-content>
+        {{ conductorData.nombre }}
+      </ion-card-content>
+    </ion-card>
+    <!-- Sección de Nombre -->
+    <ion-card>
+      <ion-card-header>
+        Vehiculo
+      </ion-card-header>
+      <ion-card-content>
+        {{ conductorData.vehiculo }}
+      </ion-card-content>
+    </ion-card>
+
+    <!-- Sección de Edad -->
+    <ion-card>
+      <ion-card-header>
+        Edad
+      </ion-card-header>
+      <ion-card-content>
+        {{ conductorData.edad }}
+      </ion-card-content>
+    </ion-card>
+
+    <!-- Sección de Patente -->
+    <ion-card>
+      <ion-card-header>
+        Patente del Vehículo
+      </ion-card-header>
+      <ion-card-content>
+        {{ conductorData.patente }}
+      </ion-card-content>
+    </ion-card>
+
+    <!-- Sección de Foto de la Licencia -->
+    <!-- <ion-card>
+      <ion-card-header>
+        Foto de la Licencia
+      </ion-card-header>
+      <ion-card-content>
+        <img [src]="conductorData.fotoLicencia" *ngIf="conductorData.fotoLicencia" alt="Licencia">
+      
+      </ion-card-content>
+    </ion-card> -->
+  </div>
+  <ion-grid class="ion-text-center">
+    <ion-row>
+      <ion-col size="12">
+        <ion-img src="../assets/img/auto.png" (click)="irAPlanearViaje()" style="cursor: pointer;"></ion-img>
+        <p>Planifica tu próximo viaje como conductor</p>
+        <ion-button expand="full" (click)="irAPlanearViaje()" class="option-button">
+          Planear Viaje
+        </ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="4">
+        <ion-img src="../assets/img/list.png" (click)="irHistorial()"style="cursor: pointer;"></ion-img>
+        <p>Historial</p>
+        
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="4">
+        <ion-img src="../assets/img/chat.png" (click)="irAChat()"style="cursor: pointer;"></ion-img>
+        <p>Chat</p>
+        
+      </ion-col>
+    </ion-row>
+    
+  </ion-grid>
+
+</ion-content>

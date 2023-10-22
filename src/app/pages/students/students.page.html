@@ -1,0 +1,32 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button auto-hide="false"></ion-menu-button>
+    </ion-buttons>
+  
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="student-page">
+  <ion-title>
+    <h1>Estudiantes</h1>
+  </ion-title>
+  <p>Si están aquí para alquilar un auto con Tellevo, ¡estamos emocionados de tenerlos a bordo!</p>
+  <ion-grid>
+    <ion-row class="icon-row">
+      <ion-col size="4">
+        <ion-img src="../assets/img/perfil.jpg" (click)="irPerfil()"></ion-img>
+        <p>Perfil</p>
+      </ion-col>
+      <ion-col size="4">
+        <ion-img src="../assets/img/auto.png" (click)="irViajes()"></ion-img>
+        <p>Viajes</p>
+      </ion-col>
+      <ion-col size="4">
+        <ion-img src="../assets/img/chat.png" (click)="irAChat()"></ion-img>
+        <p>Chat</p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  
+</ion-content>

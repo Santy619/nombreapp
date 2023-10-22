@@ -1,0 +1,29 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/drivers"></ion-back-button>
+    </ion-buttons>
+
+
+    <ion-title>Historial de Viajes</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-list>
+    <ion-item-divider color="light">Viajes Activos</ion-item-divider>
+    <ion-item *ngFor="let viaje of viajesActivos">
+      <ion-label>{{ viaje.nombre }}</ion-label>
+    </ion-item>
+
+    <ion-item-divider color="light">Viajes Completados</ion-item-divider>
+    <ion-item *ngFor="let viaje of viajesCompletados">
+      <ion-label>{{ viaje.nombre }}</ion-label>
+    </ion-item>
+
+    <ion-item-divider color="light">Viajes Cancelados</ion-item-divider>
+    <ion-item *ngFor="let viaje of viajesCancelados">
+      <ion-label>{{ viaje.nombre }}</ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>

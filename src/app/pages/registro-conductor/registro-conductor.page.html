@@ -1,0 +1,37 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Registro de Conductor</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-label position="floating">Nombre</ion-label>
+      <ion-input [(ngModel)]="nombre" name="nombre" type="text"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Vehiculo</ion-label>
+      <ion-input [(ngModel)]="vehiculo" name="vehiculo" type="text"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Edad</ion-label>
+      <ion-input [(ngModel)]="edad" name="edad" type="number"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Patente</ion-label>
+      <ion-input [(ngModel)]="patente" name="patente" type="text"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Subir Licencia</ion-label>
+      <ion-input type="file" (change)="onFileSelected($event)"></ion-input>
+    </ion-item>
+  </ion-list>
+
+  <ion-button expand="full" (click)="registrarComoConductor()" class="register-button">
+    Registrarse como Conductor
+  </ion-button>
+</ion-content>

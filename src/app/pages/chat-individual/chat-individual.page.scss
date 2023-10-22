@@ -1,0 +1,17 @@
+/* Estilo para el contenedor del icono y la entrada de mensajes */
+.entrada-mensaje-container {
+    display: flex;
+    align-items: center; /* Alinea verticalmente los elementos */
+  }
+  
+  /* Estilo para la entrada de mensajes */
+  ion-input {
+    flex-grow: 1; /* La entrada de mensajes ocupa el espacio restante */
+    margin-right: 10px; /* Espacio entre la entrada de mensajes y el icono */
+  }
+  
+  /* Estilo para el icono de enviar */
+  .enviar-icon {
+    font-size: 24px; /* Tamaño del icono */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el icono */
+  }

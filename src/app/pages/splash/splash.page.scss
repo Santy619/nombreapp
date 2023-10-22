@@ -1,0 +1,15 @@
+/* splash.component.scss */
+
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Establecer el 100% del alto de la pantalla */
+    background-color: #1a1a1a; /* Asegura que el fondo sea blanco o del color que desees */
+  }
+  
+  ion-spinner {
+    width: 4rem;
+    height: 4rem;
+    --color: #acacac; /* Cambia el color del spinner si lo deseas */
+  }

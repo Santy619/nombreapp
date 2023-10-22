@@ -1,0 +1,68 @@
+
+  
+  ion-content {
+    ion-grid {
+      ion-row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+  
+        ion-col {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+  
+          p {
+            font-size: 16px;
+            margin-top: 5px;
+            color: #666;
+          }
+        }
+      }
+    }
+    
+    ion-img {
+      margin-top: 20px;
+      width: 100px;
+      height: 100px;
+      margin-bottom: 5px;
+    }
+  
+    .option-button {
+      margin-top: 10px;
+    }
+  }
+  
+  .welcome-container {
+    text-align: center;
+    padding: 20px;
+  
+    .welcome-title {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #333; // Cambia el color según tu diseño
+    }
+  
+    .welcome-message {
+      font-size: 18px;
+      color: #666; // Cambia el color según tu diseño
+    }
+  }
+  
+  .additional-content {
+    margin-top: 30px;
+  
+    .section-title {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #333;
+    }
+  
+    ion-item {
+      font-size: 18px;
+      color: #666;
+      cursor: pointer;
+    }
+  }

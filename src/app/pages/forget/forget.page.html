@@ -1,0 +1,29 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/login"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Restablecer Contraseña</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      
+      <ion-col class="form-container">
+        <div class="image-container">
+          <img src="../assets/img/duocuctrans.png" alt="Imagen de Muestra del GPS">
+          </div>
+        <form (ngSubmit)="onSubmit()">
+          <ion-item>
+            <ion-label position="floating">Correo Electrónico</ion-label>
+            <ion-input type="email" [(ngModel)]="email" name="email" required></ion-input>
+          </ion-item>
+
+          <ion-button expand="full" type="submit">Enviar Correo</ion-button>
+        </form>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

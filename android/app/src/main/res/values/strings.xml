@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">santyapp</string>
+    <string name="title_activity_main">santyapp</string>
+    <string name="package_name">com.santy.app</string>
+    <string name="custom_url_scheme">com.santy.app</string>
+</resources>

@@ -1,0 +1,14 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Generador de QR</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="ion-padding">
+    <button (click)="generateQRCodeWithRotation()">Generar Código QR</button>
+    <div *ngIf="qrImage" class="qr-container">
+      <img src="../assets/img/qrimage.png" [style.transform]="'rotate(' + rotationDegrees + 'deg)'" alt="Código QR">
+    </div>
+  </div>
+</ion-content>

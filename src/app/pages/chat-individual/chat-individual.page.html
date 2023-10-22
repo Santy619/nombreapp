@@ -1,0 +1,26 @@
+
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/chat"></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{ contactoSeleccionado }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content [fullscreen]="true">
+  <ion-list>
+    <ion-item *ngFor="let mensaje of conversacion">
+      {{ mensaje.remitente }}: {{ mensaje.mensaje }}
+    </ion-item>
+  </ion-list>
+  
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <div class="entrada-mensaje-container">
+      <ion-input [(ngModel)]="nuevoMensaje" placeholder="Escribe un mensaje..."></ion-input>
+      <ion-icon name="send" (click)="enviarMensaje()" color="primary" class="enviar-icon"></ion-icon>
+    </div>
+  </ion-toolbar>
+</ion-footer>

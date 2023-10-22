@@ -1,0 +1,16 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Términos y Condiciones</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div>
+    <p>Estos son los términos y condiciones generales de uso de nuestra aplicación.</p>
+   <p>"¡Bienvenido a TeLlevo! TeLlevo es una plataforma que conecta a estudiantes con movilización propia, brindándoles la oportunidad de compartir viajes y facilitar sus desplazamientos de regreso a casa. Al utilizar TeLlevo, aceptas cumplir con ciertas reglas y políticas que garantizan una experiencia segura y agradable para todos los usuarios. Esto incluye la responsabilidad de respetar a los conductores y pasajeros, seguir las normativas de tráfico y asegurarte de que tu perfil esté completo y actualizado. Además, ten en cuenta que cualquier comportamiento inapropiado, como acoso, discriminación o incumplimiento de las normas de la aplicación, no será tolerado. TeLlevo se esfuerza por crear una comunidad de confianza, y tu participación es fundamental para lograrlo. 
+    ¡Gracias por unirte a TeLlevo y ayudarnos a facilitar tus viajes de retorno de manera eficiente!"</p>
+  </div>
+  <ion-checkbox [(ngModel)]="aceptarTerminos"></ion-checkbox> <!-- Cambia el nombre de la propiedad -->
+    <ion-label>Acepto los términos y condiciones.</ion-label>
+    <ion-button expand="full" (click)="aceptarTerminos()">Aceptar</ion-button>
+</ion-content>

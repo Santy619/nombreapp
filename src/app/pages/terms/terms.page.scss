@@ -1,0 +1,40 @@
+
+    .content {
+      // Estilo para el contenido
+      font-size: 18px;
+      color: #333;
+      text-align: justify;
+  
+      img {
+        // Estilo para las imágenes
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+      }
+    }
+  
+    .checkbox-container {
+      // Estilo para el contenedor de la casilla de verificación y el botón
+      text-align: center;
+      margin-top: 20px;
+  
+      ion-checkbox {
+        // Estilo para la casilla de verificación
+        --background: #007bff;
+        --border-color: #007bff;
+        --border-radius: 5px;
+        --height: 30px;
+      }
+  
+      ion-button {
+        // Estilo para el botón de aceptar
+        --background: #007bff;
+        --border-radius: 5px;
+        --color: #fff;
+        --height: 40px;
+        --width: 120px;
+        font-size: 16px;
+        margin-top: 10px;
+      }
+    }

@@ -1,0 +1,23 @@
+ion-menu {
+    ion-content {
+      background-color: #f8f8f8; // Cambia el color de fondo según tu diseño
+    }
+  
+    ion-list {
+      padding-top: 20px; // Ajusta el espaciado superior
+    }
+  
+    ion-item {
+      text-align: center; // Centrar el texto
+      font-size: 18px;
+      color: rgb(143, 143, 143); // Cambia el color del texto según tu diseño
+      padding: 10px 0; // Ajusta el espaciado vertical
+    }
+    
+    p {
+      text-align: center; // Centrar el texto
+      font-size: 16px;
+      color: #666; // Cambia el color del texto según tu diseño
+      margin-top: 20px; // Ajusta el espaciado superior
+    }
+  }
