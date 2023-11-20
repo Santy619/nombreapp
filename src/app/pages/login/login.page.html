@@ -13,8 +13,8 @@
   <div class="center-container">
     <form (ngSubmit)="onSubmit()">
       <ion-item>
-        <ion-label position="floating">Usuario</ion-label>
-        <ion-input type="text" [(ngModel)]="username" name="username" required></ion-input>
+        <ion-label position="floating">Email</ion-label>
+        <ion-input type="text" [(ngModel)]="email" name="email" required></ion-input>
       </ion-item>
 
       <ion-item>
@@ -24,9 +24,9 @@
 
       <ion-button expand="full" type="submit">Iniciar Sesión</ion-button>
     </form>
-
+    <ion-button expand="full" (click)="goToRegisterPage()">Registrarse</ion-button>
      <!-- Enlace para reestablecer contraseña -->
-     <a routerLink="/forget">¿Olvidaste tu contraseña?</a>
+     <a routerLink="/forgotpass">¿Olvidaste tu contraseña?</a>
     
      <!-- Enlace para registrarse -->
      <!-- <a routerLink="/register">Registrarse</a> -->

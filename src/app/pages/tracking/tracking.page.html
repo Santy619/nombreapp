@@ -1,0 +1,25 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button auto-hide="false"></ion-menu-button>
+    </ion-buttons>
+
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+
+    <ion-title>Seguimiento de Viaje</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-content>
+      <ion-label>Distancia: {{ distance }} km</ion-label>
+      <ion-label>Precio: ${{ price }}</ion-label>
+      <!-- Otras etiquetas según tus necesidades -->
+    </ion-card-content>
+  </ion-card>
+
+  <!-- Agrega aquí el código para realizar el seguimiento del viaje -->
+</ion-content>

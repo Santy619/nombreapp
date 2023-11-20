@@ -4,6 +4,7 @@ import { RegistroConductorPage } from './pages/registro-conductor/registro-condu
 import { PerfilConductorPage } from './pages/perfil-conductor/perfil-conductor.page';
 import { MapComponent } from './components/map/map.component';
 import { ProfilePage } from './pages/profile/profile.page';
+import { TrackingPage } from './pages/tracking/tracking.page';
 const routes: Routes = [
   {
     path: '',
@@ -72,7 +73,6 @@ const routes: Routes = [
     loadChildren: () => import('./pages/profile/profile.module').then( m => m.ProfilePageModule)
   },
   { path: 'profile/:username', component: ProfilePage },
-  
   {
     path: 'historial-viajes',
     loadChildren: () => import('./pages/historial-viajes/historial-viajes.module').then( m => m.HistorialViajesPageModule)
@@ -83,14 +83,25 @@ const routes: Routes = [
     loadChildren: () => import('./pages/terms/terms.module').then( m => m.TermsPageModule)
   },
   {
-    path: 'user-list',
-    loadChildren: () => import('./pages/user-list/user-list.module').then( m => m.UserListPageModule)
-  },
-  {
     path: 'qr-generator',
     loadChildren: () => import('./pages/qr-generator/qr-generator.module').then( m => m.QrGeneratorPageModule)
   },
- 
+  {
+    path: 'tracking',
+    loadChildren: () => import('./pages/tracking/tracking.module').then( m => m.TrackingPageModule)
+  },
+  {
+    path: 'tracking/:distance/:price',
+    component: TrackingPage,
+  },
+  {
+    path: 'register',
+    loadChildren: () => import('./pages/register/register.module').then( m => m.RegisterPageModule)
+  },
+  {
+    path: 'forgotpass',
+    loadChildren: () => import('./pages/forgotpass/forgotpass.module').then( m => m.ForgotpassPageModule)
+  },
 
  
 // Agrega esta ruta
